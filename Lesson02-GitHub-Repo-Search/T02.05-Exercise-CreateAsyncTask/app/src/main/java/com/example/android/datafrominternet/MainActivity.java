@@ -93,9 +93,6 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(s);
 
 
-
-
-
             if (s != null && !s.equals("")) {
                 mSearchResultsTextView.setText(s);
             } else {
