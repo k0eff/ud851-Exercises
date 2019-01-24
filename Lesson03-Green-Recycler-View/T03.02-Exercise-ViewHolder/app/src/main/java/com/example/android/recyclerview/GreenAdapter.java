@@ -116,10 +116,11 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
 
         public void NumberViewHolder (View itemView) {
             super.itemView();
+            this.listItemNumberView = (TextView) itemView.findViewById(R.id.tv_item_number);
         }
 
         public void bind(int listIndex) {
-            this.listItemNumberView.setText(Integer.toString(listIndex));
+            this.listItemNumberView.setText(String.ValueOf(listIndex));
         }
 
 
